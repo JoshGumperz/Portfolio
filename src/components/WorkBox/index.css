@@ -1,0 +1,79 @@
+.workbox-container {
+    position: relative;
+    width: 428px;
+    height: 270px;
+    margin: 30px 0px 30px 0px;
+}
+
+.workbox-overlay {
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.719);
+    z-index: 1;
+}
+
+.workbox-projectDescription, .workbox-projectLinkContainer {
+    position: absolute;
+    color: #000;
+    z-index: 2;
+}
+
+.workbox-projectDescription {
+    top: 4%;
+}
+
+.workbox-projectLinkContainer {
+    bottom: 15%;
+}
+
+.workbox-projectLinkText, .workbox-projectDescription {
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+}
+
+.workbox-projectLink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.workbox-previewImage {
+    height: 240px;
+    width: 100%;
+}
+
+.workbox-projectTitle {
+    text-align: center;
+}
+
+.workbox-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .workbox-container {
+        width: 256px;
+        height: 144px;
+    }   
+    
+    .workbox-overlay, .workbox-previewImage {
+        height: 144px;
+    }
+
+    .workbox-projectLinkText, .workbox-projectDescription {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 13px;
+        color: #000;
+    }   
+    
+    .workbox-projectDescription {
+        top: 2%;
+    }
+    
+    .workbox-projectLinkContainer {
+        bottom: 5%;  
+    }
+}

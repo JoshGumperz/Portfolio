@@ -1,0 +1,50 @@
+.about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.about-bodyContainer {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 98%;
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;  
+    margin: 15px 0px 15px 0px; 
+    overflow-x: hidden;
+}
+
+.about-paragraph {
+    padding: 30px 30px 30px 15px;
+    margin: 15px;
+    border-left: 3px solid #000;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.about-h2 {
+    padding: 10px 10px 20px 10px;
+    font-size: 32px;
+    overflow-x: hidden;
+}
+
+.about-img {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin: 15px 15px 0px 15px;
+    border-radius: 50%;
+    overflow-x: hidden;
+}
+
+.about-text {
+    font-size: 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    word-spacing: 2px;
+    line-height: 30px;
+    margin-top: 5px;
+}

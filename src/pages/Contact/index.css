@@ -1,0 +1,90 @@
+.contact-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.contact-bodyContainer {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 98%;
+    height: 100%;
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-left: 3px solid #000;
+    width: 50%;
+    height: 95%;
+    margin-left: 20px;
+}
+
+.contact-h2 {
+    align-self: flex-start;
+    margin-left: 2%;
+}
+
+.contact-inputTitle, .contact-inputMessage {
+    width: 98%;
+}
+
+.contact-inputTitle {
+    margin-top: 10px;
+    height: 40px;
+}
+
+.contact-inputTitle::placeholder, .contact-inputMessage::placeholder {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.contact-inputMessage {
+    margin: 5px 0px 5px 0px;
+    padding-bottom: 200px;
+}
+
+.contact-submitBtn {
+    margin-bottom: 10px;
+    padding: 3px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    height: 35px;
+    width: 65px;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contact-submitBtn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.contact-messageContainer {
+ width: 50%;
+ margin-left: 5%;
+}
+
+.contact-inline {
+    width: 100%;
+}
+
+.contact-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
