@@ -48,3 +48,10 @@
     line-height: 30px;
     margin-top: 5px;
 }
+
+@media screen and (max-width: 550px) {
+    .about-img {
+        height: 180px;
+        width: 180px;
+    }
+}

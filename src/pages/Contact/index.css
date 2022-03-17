@@ -88,3 +88,21 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1050px) {
+    .contact-inputContainer {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-messageContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-inputContainer {
+        width: 85%;
+    }
+}
