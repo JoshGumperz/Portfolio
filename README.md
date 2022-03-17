@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Josh-Gumperz-React-Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my react-portfolio and the first big solo-project I've worked on since completing my bootcamp! The goal of this project was to create an easily accessible portfolio website so that anyone who wants to know more about me, the work I've done, or my contact information can easily find it. The site is live for anyone to see so go ahead and take a look!
 
-## Available Scripts
+### Prerequisites
 
-In the project directory, you can run:
+The only thing you need in order to view the site is a device with internet connection and a browser!
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I've included screenshots of what the site should look like as you scroll through.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The first thing you should see upon loading up the site is the about me page, which looks like this: 
+![Screenshot](https://i.imgur.com/xubaxsH.png)
+![Screenshot](https://i.imgur.com/okXS92a.png) 
+here you can learn a little bit about me, why I got in to software development, how I learned what I know about software development, what my goals are, as well as some of my interests and hobbies.
 
-### `npm test`
+You can use the easily accessible navigation links to navigate to any different page you choose.
+![Screenshot](https://i.imgur.com/5cBC7pK.png) 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can can also easily navigate to the deployed sites for some of the projects I've worked on from any page using this carousel
+![Screenshot](https://i.imgur.com/1MKHhko.png)
 
-### `npm run build`
+This next page is where you will find acess to a few of my projects.
+![Screenshot](https://i.imgur.com/Enz8h1l.png) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Upon hovering over a project, you will see a short description of that project, as well as 2 links, one to view the Github repository for that project, as well as one to view the deployed site.
+![Screenshot](https://i.imgur.com/UfsITU3.png) 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Next, you can even directly view my resume by using the Resume navigation link
+![Screenshot](https://i.imgur.com/l9lprjI.png) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Finally, the last page is where you can send messages to me directly. 
+![Screenshot](https://i.imgur.com/5t81aL8.png) 
+![Screenshot](https://i.imgur.com/THTF6Nc.png) 
 
-### `npm run eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* [React](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployed Link
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* [See Live Site](https://josh-gumperz-portfolio-36681.web.app)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* **Josh Gumperz** 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Link to Github](https://github.com/JoshGumperz)
+- [Link to LinkedIn](https://www.linkedin.com/in/josh-gumperz-8706a8185/)
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License 
