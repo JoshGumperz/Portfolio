@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "josh-gumperz-portfolio-36681"
-  }
+    "default": "josh-gumperz-portfolio-36681",
+    "portfolio": "josh-gumperz-portfolio-36681"
+  },
+  "targets": {}
 }
