@@ -1,7 +1,7 @@
-import React from 'react';
+import { useEffect } from 'react';
 import "./index.css"
 
-function About() {
+function About({scrollToSection}) {
     // using a function to automatically calculate my age so I don't have to keep coming back to update it
     function getAge(dateString) {
         var today = new Date();
@@ -14,6 +14,10 @@ function About() {
         }
         return age;
     }
+
+    useEffect(() => {
+        scrollToSection();
+    })
 
     return (  
         <section className="about-container">

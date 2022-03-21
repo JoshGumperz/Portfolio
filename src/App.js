@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import MyWork from './pages/MyWork';
 import SideBar from './components/Sidebar';
 import Slider from './components/Slider';
+import { animateScroll as scroll } from 'react-scroll'
 
 
 function App() {
@@ -26,20 +27,31 @@ function App() {
     setHideSidebar(!hideSidebar)
   }
 
+  // bascially we want to automatically scroll to the right part of the page whenever the user navigates to a different part of the site
+  const scrollToSection = () => {
+    scroll.scrollTo(400, {
+      duration: 500,
+      delay: 0,
+      smooth: true,
+      offset: 50,
+    })
+  } 
+  
+
   return (
     <Router className="App">
-      <Navbar toggleSidebar={toggleSidebar} currentPage={currentPage} setPage={setPage}/>
+      <Navbar toggleSidebar={toggleSidebar} currentPage={currentPage} setPage={setPage} scrollToSection={scrollToSection}/>
       <SideBar hideSidebar={hideSidebar} toggleSidebar={toggleSidebar}/>
       <Slider/>
       <Switch>
         <Route path="/about">
-          <About/>
+          <About scrollToSection={scrollToSection}/>
         </Route>
         <Route path="/contact">
-          <Contact/>
+          <Contact scrollToSection={scrollToSection}/>
         </Route>
         <Route path="/mywork">
-          <MyWork/>
+          <MyWork scrollToSection={scrollToSection}/>
         </Route>
         <Route path="/">
           <Redirect to="/about"/>

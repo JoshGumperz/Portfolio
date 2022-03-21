@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "./index.css"
-function Contact() {
+function Contact({ scrollToSection }) {
     // at this point in time, I'm not actually receiving any messages the user submits. Setting it up to actually email me whatever the user submits will probably come in the future. Until then, we just re-render the page whenever user submits a message.
    const [submitted, setSubmitted] = useState(false)
 
    const handleSubmit = () => {
        setSubmitted(!submitted)
    } 
+
+   useEffect(() => {
+       scrollToSection();
+   })
 
    if(submitted) {
     return (  

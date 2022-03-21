@@ -4,13 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
   background-color: rgb(251, 246, 237);
-  /* background-color: rgb(255, 145, 0); */
   overflow-x: hidden;
 }

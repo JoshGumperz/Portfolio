@@ -14,7 +14,7 @@ function WorkBox({ Project }) {
         <div className={`workbox-overlay ${!isHovered ? 'workbox-hidden' : ''}`}></div>
         <p className={`workbox-projectDescription ${!isHovered ? 'workbox-hidden' : ''}`}>{Project.description}</p>
         <span className={`workbox-projectLinkContainer ${!isHovered ? 'workbox-hidden' : ''}`}>
-        <p className='workbox-projectLinkText'>To visit the deployed site you can click <a href={Project.deployed_url} target="blank" className="workbox-projectLinkText workbox-projectLink">here</a>, or you can visit the github repository by clicking <a href={Project.repo_url} className="workbox-projectLinkText workbox-projectLink">here</a></p>
+        <p className='workbox-projectLinkText'>To visit the deployed site you can click <a href={Project.deployed_url} rel="noopener noreferrer" target="_blank" className="workbox-projectLinkText workbox-projectLink">here</a>, or you can visit the github repository by clicking <a href={Project.repo_url} rel="noopener noreferrer" target="_blank" className="workbox-projectLinkText workbox-projectLink">here</a></p>
         </span>
         <img src={Project.image} className="workbox-previewImage" alt="preview-screenshot"/>
         <h3 className='workbox-projectTitle'>{Project.title}</h3>

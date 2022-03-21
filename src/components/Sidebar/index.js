@@ -14,7 +14,7 @@ const SideBar = ({ hideSidebar, toggleSidebar }) => {
             <ul className='sidebar-list'>
                 <Link className='sidebar-link' to='/about'>About Me</Link>
                 <Link className='sidebar-link' to='/mywork'>My Work</Link>
-                <a className='sidebar-link' href={resume}>Resume</a>
+                <a className='sidebar-link' href={resume} rel="noopener noreferrer" target="_blank">Resume</a>
                 <Link className='sidebar-link' to='/contact'>Contact Me</Link>
             </ul>
         </nav>
