@@ -63,10 +63,8 @@
     }
 
     .workbox-projectLinkText, .workbox-projectDescription {
-        font-weight: 500;
         font-size: 12px;
         line-height: 13px;
-        color: #000;
     }   
     
     .workbox-projectDescription {
@@ -75,5 +73,12 @@
     
     .workbox-projectLinkContainer {
         bottom: 5%;  
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .workbox-projectLinkText, .workbox-projectDescription {
+        font-size: 10px;
+        line-height: 12px;
     }
 }

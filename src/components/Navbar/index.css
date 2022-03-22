@@ -97,3 +97,23 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .navbar-navLogo {
+        font-size: 1.6rem;
+    }
+    .navbar-navLogo {
+        margin-left: 0;
+    }
+
+    .navbar-navContainer {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar-navLogo {
+        font-size: 1.3rem;
+    }
+
+}

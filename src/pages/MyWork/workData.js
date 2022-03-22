@@ -1,5 +1,6 @@
 const techBlogImage = `${process.env.PUBLIC_URL}/assets/Images/Tech-Blog.png`
 const ArcaderunnerImage = `${process.env.PUBLIC_URL}/assets/Images/Arcaderunner.png`
+const myBooksImage = `${process.env.PUBLIC_URL}/assets/Images/MyBooks.png`
 const weatherDashboardImage = `${process.env.PUBLIC_URL}/assets/Images/Weather-Dashboard.png`
 const passwordGeneratorImage = `${process.env.PUBLIC_URL}/assets/Images/Password-Generator.png`
 
@@ -17,6 +18,13 @@ export const Arcaderunner = {
     repo_url: 'https://github.com/ts795/arcaderunner',
     image: ArcaderunnerImage
 }
+export const MyBooks = {
+    title: "My Books",
+    description: "Built with Handlebars.js, JavaScript, jQuery, Node.js, MySQL, and more, MyBooks is a book search engine which utilizes Google's Books API to display up to date information on any book the user searches. Users can also create accounts, and save a list of all their favorite books!",
+    deployed_url: 'https://my-books-1748.herokuapp.com/',
+    repo_url: 'https://github.com/JoshGumperz/MyBooks',
+    image: myBooksImage 
+} 
 export const WeatherDashboard = {
     title: "Weather Dashboard",
     description: "Built with HTML/CSS, JavaScript, & jQuery, Weather Dashboard utilizes a clean, friendly UI to show the user the latest up to date weather data for any city they search and includes features such as search history and a color coded UV Index.",

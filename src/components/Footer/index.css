@@ -32,6 +32,7 @@
     flex-wrap: wrap;
     width: 100%;
     background-color: #fff;
+    word-wrap: break-word;
 }
 
 .footer-link {
@@ -42,6 +43,7 @@
     font-family: 'Poppins', sans-serif;
     padding: 10px;
     margin-top: 5px;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 1570px) {

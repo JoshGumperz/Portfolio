@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 const sliderData = [
   {
     id: uuidv4(),
-    title: "Weather-Dashboard",
+    title: "Tech-Blog",
   },
   {
     id: uuidv4(),
@@ -11,7 +11,11 @@ const sliderData = [
   },
   {
     id: uuidv4(),
-    title: "Tech-Blog",
+    title: "MyBooks",
+  },
+  {
+    id: uuidv4(),
+    title: "Weather-Dashboard",
   },
   {
     id: uuidv4(),
