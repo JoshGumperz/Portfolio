@@ -63,8 +63,8 @@
     }
 
     .workbox-projectLinkText, .workbox-projectDescription {
-        font-size: 12px;
-        line-height: 13px;
+        font-size: 11px;
+        line-height: 12px;
     }   
     
     .workbox-projectDescription {
@@ -79,6 +79,5 @@
 @media screen and (max-width: 300px) {
     .workbox-projectLinkText, .workbox-projectDescription {
         font-size: 10px;
-        line-height: 12px;
     }
 }

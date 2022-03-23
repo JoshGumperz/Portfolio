@@ -32,7 +32,6 @@
     flex-wrap: wrap;
     width: 100%;
     background-color: #fff;
-    word-wrap: break-word;
 }
 
 .footer-link {
@@ -49,5 +48,11 @@
 @media screen and (max-width: 1570px) {
     .footer-linkContainer {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .footer-linkContainer {
+        word-wrap: break-word;
     }
 }
