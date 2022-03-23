@@ -89,7 +89,7 @@ export default function Slider() {
                         <img 
                         onClick={onClickRedirect} 
                         src={width > 1200 ? `${process.env.PUBLIC_URL}/assets/Images/Fullsize/Img${index + 1}.png`  
-                        : width <= 1200 && width > 500 ? `${process.env.PUBLIC_URL}/assets/Images/Midsized/Img${index + 1}.png`
+                        : width <= 1200 && width > 500 ? `${process.env.PUBLIC_URL}/assets/Images/Midsize/Img${index + 1}.png`
                         : `${process.env.PUBLIC_URL}/assets/Images/Mobilesize/Img${index + 1}.png`}
                         alt="slide-show-images"
                         className='slider-slideImg'
