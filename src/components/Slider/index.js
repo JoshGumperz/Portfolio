@@ -6,6 +6,16 @@ import sliderData from './sliderData'
 export default function Slider() {
     const [isHovered, setIsHovered] = useState(false)
     const [slideIndex, setSlideIndex] = useState(1)
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const updateWidth = () => {
+        setWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateWidth);
+        return () => window.removeEventListener("resize", updateWidth);
+    });
 
     const handleHover = () => {
         setIsHovered(!isHovered)
@@ -78,7 +88,11 @@ export default function Slider() {
                         <div onClick={onClickRedirect} className={`slider-overlay ${isHovered ? 'slider-hidden' : ''}`}></div>
                         <img 
                         onClick={onClickRedirect} 
-                        src={`${process.env.PUBLIC_URL}/assets/Images/Img${index + 1}.png`}
+                        src={width > 1500 ? `${process.env.PUBLIC_URL}/assets/Images/Fullsize/Img${index + 1}.png` 
+                        : width <= 1500 && width > 1200 ? `${process.env.PUBLIC_URL}/assets/Images/1500-width/Img${index + 1}.png` 
+                        : width <= 1200 && width > 900 ? `${process.env.PUBLIC_URL}/assets/Images/1200-width/Img${index + 1}.png`
+                        : width <= 900 && width > 600 ? `${process.env.PUBLIC_URL}/assets/Images/900-width/Img${index + 1}.png` 
+                        : `${process.env.PUBLIC_URL}/assets/Images/Mobilesize/Img${index + 1}.png` }
                         alt="slide-show-images"
                         />
                         <div onClick={onClickRedirect} className='slider-titleTextWrapper'>
