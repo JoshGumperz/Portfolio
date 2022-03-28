@@ -120,3 +120,22 @@
     font-size: 3rem;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .slider-titleTextWrapper {
+    top: 28%;
+  }
+  .slider-titleText {
+    font-size: 2.5rem;
+  }
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .slider-prev {
+    left: 10px;
+  }
+  .slider-next {
+    right: 10px;
+  }
+}

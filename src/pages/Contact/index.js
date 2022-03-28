@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import "./index.css"
 import emailjs from "emailjs-com"
+import SubmitBtn from '../../components/Button/SubmitBtn';
 
 function Contact({ scrollToSection }) {
    const [submitted, setSubmitted] = useState(false)
@@ -40,11 +41,18 @@ function Contact({ scrollToSection }) {
    return (
        <div className='contact-container'>
            <div className='contact-bodyContainer'>
-                <form className='contact-inputContainer' onSubmit={handleSubmit}>
+                <form className='contact-form' onSubmit={handleSubmit}>
                         <h2 className="contact-h2">Send Me A Message</h2>
-                        <input className="contact-inputTitle" type="email" name="email" placeholder="Your Email" required/>
-                        <input className="contact-inputMessage" type="text" name="message" placeholder="Message" required/>
-                        <button className="contact-submitBtn" type="submit">Submit</button>
+                        <div className='contact-inputContainer'>
+                            <input className="contact-input" type="email" name="email" placeholder="Your Email" required/>
+                            <input className="contact-input" type="text" name="name" placeholder="Your Name" required/>
+                        </div>
+                        <div className='contact-inputContainer'>
+                            <input className="contact-message" type="text" name="message" placeholder="Message" required/>
+                        </div>
+                        <span className='contact-submitContainer'>
+                            <SubmitBtn type="submit"/>
+                        </span>
                 </form>
            </div>
        </div>

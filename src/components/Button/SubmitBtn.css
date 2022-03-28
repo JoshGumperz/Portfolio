@@ -1,0 +1,41 @@
+.submitBtn {
+    position: relative;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+    padding: 3px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 65px;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submitBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ffff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.submitBtn:hover {
+    color: #000;
+}
+
+.submitBtn:hover::before { 
+    transform: scaleY(1);
+}
