@@ -1,8 +1,8 @@
-const techBlogImage = `${process.env.PUBLIC_URL}/assets/Images/Tech-Blog.png`
+const techBlogImage = `${process.env.PUBLIC_URL}/assets/Images/TechBlog.png`
 const ArcaderunnerImage = `${process.env.PUBLIC_URL}/assets/Images/Arcaderunner.png`
-const myBooksImage = `${process.env.PUBLIC_URL}/assets/Images/MyBooks.png`
-const weatherDashboardImage = `${process.env.PUBLIC_URL}/assets/Images/Weather-Dashboard.png`
-const passwordGeneratorImage = `${process.env.PUBLIC_URL}/assets/Images/Password-Generator.png`
+const myBooksImage = `${process.env.PUBLIC_URL}/assets/Images/Mybooks.png`
+const weatherDashboardImage = `${process.env.PUBLIC_URL}/assets/Images/WeatherDashboard.png`
+const passwordGeneratorImage = `${process.env.PUBLIC_URL}/assets/Images/PasswordGenerator.png`
 
 export const TechBlog = {
     title: "Tech Blog",
