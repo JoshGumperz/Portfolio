@@ -27,7 +27,7 @@ function App() {
     setHideSidebar(!hideSidebar)
   }
 
-  // bascially we want to automatically scroll to the right part of the page whenever the user navigates to a different part of the site
+  // bascially we want to automatically scroll to the right part of the page whenever the user navigates to a different part of the site, so we create this function, then pass it to each page component, and use the useEffect hook to call it when the component renders
   const scrollToSection = () => {
     scroll.scrollTo(400, {
       duration: 500,
