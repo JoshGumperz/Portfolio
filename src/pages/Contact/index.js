@@ -22,6 +22,7 @@ function Contact({ scrollToSection }) {
        scrollToSection();
    })
 
+// display thank you message once user submits form
    if(submitted) {
     return (  
         <div className='contact-container'>
