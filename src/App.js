@@ -41,7 +41,7 @@ function App() {
   return (
     <Router className="App">
       <Navbar toggleSidebar={toggleSidebar} currentPage={currentPage} setPage={setPage} scrollToSection={scrollToSection}/>
-      <SideBar hideSidebar={hideSidebar} toggleSidebar={toggleSidebar}/>
+      <SideBar hideSidebar={hideSidebar} toggleSidebar={toggleSidebar} setPage={setPage}/>
       <Slider/>
       <Switch>
         <Route path="/about">
