@@ -50,14 +50,20 @@
 
 .contact-input::placeholder, .contact-message::placeholder {
     font-family: 'Raleway', sans-serif;
-    margin-left: 10px;
     font-weight: 900;
 }
 
+.contact-message::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .contact-message {
-    margin-bottom: 10px;
-    padding-bottom: 200px;
+    margin-bottom: 7px;
     width: 99.5%;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-submitContainer {
