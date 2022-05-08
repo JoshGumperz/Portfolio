@@ -112,6 +112,10 @@
     .contact-submitContainer{
         right: 0;
     }
+
+    .contact-message {
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 300px) {
