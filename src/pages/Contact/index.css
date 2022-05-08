@@ -61,6 +61,7 @@
 
 .contact-message {
     margin-bottom: 7px;
+    height: 225px;
     width: 99.5%;
     resize: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -113,9 +114,9 @@
         right: 0;
     }
 
-    .contact-message {
-        margin-bottom: 20px;
-    }
+    /* .contact-message {
+        margin-bottom: 20px; 
+    } */
 }
 
 @media screen and (max-width: 300px) {

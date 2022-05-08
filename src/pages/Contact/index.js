@@ -49,7 +49,7 @@ function Contact({ scrollToSection }) {
                             <input className="contact-input" type="text" name="name" placeholder="Your Name" required/>
                         </div>
                         <div className='contact-inputContainer'>
-                            <textarea className="contact-message" type="text" name="message" rows="15" placeholder="Message" required/>
+                            <textarea className="contact-message" type="text" name="message" placeholder="Message" required/>
                         </div>
                         <span className='contact-submitContainer'>
                             <SubmitBtn type="submit"/>
