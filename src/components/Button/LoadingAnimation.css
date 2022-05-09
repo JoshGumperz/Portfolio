@@ -1,0 +1,35 @@
+.loading-dot {
+    /* When I set the width and height using px, the animation was choppy for some reason. Setting the width and height using EM or REM fixes it */
+    height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    margin: .1rem;
+    animation: scaling 1.5s ease-in-out infinite;
+}
+
+@keyframes scaling {
+    0%, 100% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+.loading-dot:nth-child(0) {
+    animation-delay: 0s;
+}
+
+.loading-dot:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.loading-dot:nth-child(3) {
+    animation-delay: 0.6s;
+}

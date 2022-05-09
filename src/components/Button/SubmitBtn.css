@@ -1,19 +1,27 @@
-.submitBtn {
+.submitBtn, .submitLoading {
     position: relative;
-    transition: 0.3s ease-in-out;
     z-index: 1;
     padding: 3px;
+    height: 35px;
+    width: 65px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submitBtn {
+    transition: 0.3s ease-in-out;
     background-color: #000;
     color: #fff;
     border: none;
     outline: none;
-    height: 35px;
-    width: 65px;
-    border-radius: 3px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    cursor: pointer;
+}
+
+.submitLoading {
+    background-color: #fff;
+    border: 1px solid #000;
 }
 
 .submitBtn::before {

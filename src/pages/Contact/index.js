@@ -5,24 +5,29 @@ import SubmitBtn from '../../components/Button/SubmitBtn';
 
 function Contact({ scrollToSection }) {
    const [submitted, setSubmitted] = useState(false)
+    // there's a slight delay after the user submits a message before email.js sends it through, so I used props and a new component to create a loading animation to let the user know that the message is being sent  
+   const [loading, setLoading] = useState(false)
 
-// use emailjs to send me an email with whatever message the user sends 
+    // use emailjs to send me an email with whatever message the user sends 
    const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_ww36wuc', 'template_irus4ju', e.target, 'Cec0X1qCuog3QOZjj')
-      .then((result) => {
-          console.log(result.text);
-          setSubmitted(!submitted)
-      }, (error) => {
-          console.log(error.text);
-      });
-   } 
+        e.preventDefault();
+        setLoading(true)
+
+        emailjs.sendForm('service_ww36wuc', 'template_irus4ju', e.target, 'Cec0X1qCuog3QOZjj')
+        .then((result) => {
+            console.log(result.text);
+            setSubmitted(!submitted)
+            setLoading(false)  
+        }, (error) => {
+            console.log(error.text);
+        });
+    } 
 
    useEffect(() => {
        scrollToSection();
    })
 
-// display thank you message once user submits form
+    // display thank you message once user submits form
    if(submitted) {
     return (  
         <div className='contact-container'>
@@ -52,7 +57,7 @@ function Contact({ scrollToSection }) {
                             <textarea className="contact-message" type="text" name="message" placeholder="Message" required/>
                         </div>
                         <span className='contact-submitContainer'>
-                            <SubmitBtn type="submit"/>
+                            <SubmitBtn type="submit" loading={loading}/>
                         </span>
                 </form>
            </div>
