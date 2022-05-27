@@ -10,8 +10,6 @@ import SideBar from './components/Sidebar';
 import Slider from './components/Slider';
 import { animateScroll as scroll } from 'react-scroll'
 
-// test if I can push from new Mac
-
 function App() {
   // state variables used to decide whether or not to show the sidebar (should only show when on mobile and user taps the hamburger menu), and to detect the page the user is currently on.
   const [hideSidebar, setHideSidebar] = useState(true)
