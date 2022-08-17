@@ -10,14 +10,13 @@ import SideBar from './components/Sidebar';
 import Slider from './components/Slider';
 import { animateScroll as scroll } from 'react-scroll'
 
-
 function App() {
   // state variables used to decide whether or not to show the sidebar (should only show when on mobile and user taps the hamburger menu), and to detect the page the user is currently on.
   const [hideSidebar, setHideSidebar] = useState(true)
-  // use /about by default for current page, cause the about page is the first page you see when you load up the project
+  // Use window.location.pathname to get the initial value for currentPage.
   const [currentPage, setCurrentPage] = useState(window.location.pathname)
 
-  // set currentPage to be whatever page the user is currently on
+  // change currentPage whenever the user navigates to different pages
   const setPage = (path) => {
     setCurrentPage(path)
   }

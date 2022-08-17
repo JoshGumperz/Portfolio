@@ -74,7 +74,7 @@ export default function Slider() {
             return
         }
     });
-
+    // allow the user to navigate to a specific slide directly using dots
     const moveDot = index => {
         setSlideIndex(index)
     }
@@ -92,6 +92,7 @@ export default function Slider() {
                         <div onClick={onClickRedirect} className={`slider-overlay ${isHovered ? 'slider-hidden' : ''}`}></div>
                         <img 
                         onClick={onClickRedirect} 
+                        // use different sized images to fit different screen sizes
                         src={width > 1200 ? `${process.env.PUBLIC_URL}/assets/Images/Fullsize/Img${index + 1}.png`  
                         : width <= 1200 && width > 500 ? `${process.env.PUBLIC_URL}/assets/Images/Midsize/Img${index + 1}.png`
                         : `${process.env.PUBLIC_URL}/assets/Images/Mobilesize/Img${index + 1}.png`}
