@@ -3,23 +3,31 @@ import { v4 as uuidv4 } from "uuid";
 const sliderData = [
   {
     id: uuidv4(),
-    title: "Tech-Blog",
+    title: "InstantMessenger"
   },
   {
     id: uuidv4(),
-    title: "Password-Generator",
+    title: "Tech-Blog"
   },
   {
     id: uuidv4(),
-    title: "MyBooks",
+    title:"Arcaderunner"
   },
   {
     id: uuidv4(),
-    title: "Weather-Dashboard",
+    title: "Potluck-Organizer"
   },
   {
     id: uuidv4(),
-    title: "Arcaderunner",
+    title: "MyBooks"
+  },
+  {
+    id: uuidv4(),
+    title: "Weather-Dashboard"
+  },
+  {
+    id: uuidv4(),
+    title: "Password-Generator"
   }
 ];
 

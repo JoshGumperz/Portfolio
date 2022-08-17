@@ -33,15 +33,19 @@ export default function Slider() {
 
     const onClickRedirect = () => {
         if(slideIndex === 1) {
-            window.location.href = 'https://whispering-thicket-43771.herokuapp.com/'
+            window.location.href = 'https://jg-instant-messenger.herokuapp.com/'
         } else if (slideIndex === 2) {
-            window.location.href = 'https://joshgumperz.github.io/Password-Generator/'
+            window.location.href = 'https://whispering-thicket-43771.herokuapp.com/'
         } else if (slideIndex === 3) {
-            window.location.href = 'https://my-books-1748.herokuapp.com/'
+            window.location.href = 'https://afternoon-eyrie-60513.herokuapp.com/'
         } else if (slideIndex === 4) {
+            window.location.href = 'https://potluck-party-event.herokuapp.com/'
+        } else if (slideIndex === 5) {
+            window.location.href = 'https://my-books-1748.herokuapp.com/'
+        } else if (slideIndex === 6) {
             window.location.href = 'https://joshgumperz.github.io/weather-tracker/'
         } else {
-            window.location.href = 'https://afternoon-eyrie-60513.herokuapp.com/'
+            window.location.href = 'https://joshgumperz.github.io/Password-Generator/'
         }
     }
 
