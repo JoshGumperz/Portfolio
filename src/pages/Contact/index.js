@@ -3,7 +3,7 @@ import "./index.css"
 import emailjs from "emailjs-com"
 import SubmitBtn from '../../components/Button/SubmitBtn';
 
-function Contact({ scrollToSection }) {
+function Contact({ scrollToSectionAndUpdateCurrentPage }) {
    const [submitted, setSubmitted] = useState(false)
     // there's a slight delay after the user submits a message before email.js sends it through, so I used props and a new component to create a loading animation to let the user know that the message is being sent  
    const [loading, setLoading] = useState(false)
@@ -24,8 +24,8 @@ function Contact({ scrollToSection }) {
     } 
 
    useEffect(() => {
-       scrollToSection();
-   })
+    scrollToSectionAndUpdateCurrentPage();
+   }, [])
 
     // display thank you message once user submits form
    if(submitted) {

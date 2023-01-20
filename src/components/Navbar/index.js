@@ -6,7 +6,7 @@ import { Link as LinkS, animateScroll as scroll } from 'react-scroll'
 // When accessing assets in the public folder, you have to use process.env.PUBLIC_URL
 const resume = `${process.env.PUBLIC_URL}/assets/Resume/Josh-Gumperz-Resume-v1.pdf`
 
-function Navbar({ toggleSidebar, currentPage, setPage }) {
+function Navbar({ toggleSidebar, currentPage }) {
 
     const scrollTop = () => {
         scroll.scrollToTop({
@@ -27,16 +27,16 @@ function Navbar({ toggleSidebar, currentPage, setPage }) {
                     </div>
                     <ul className='navbar-navList'>
                         <li className='navbar-navItem'>
-                            <LinkR className={`navbar-navLink ${currentPage !== '/mywork' && currentPage !=='/contact' ? 'navbar-currentPage' : ''}`} onClick={() => {setPage('/about')}} to='/about'>About Me</LinkR>
+                            <LinkR className={`navbar-navLink ${currentPage !== '/mywork' && currentPage !=='/contact' ? 'navbar-currentPage' : ''}`} to='/about'>About Me</LinkR>
                         </li>
                         <li className='navbar-navItem'>
-                            <LinkR className={`navbar-navLink ${currentPage === '/mywork' ? 'navbar-currentPage' : ''}`} onClick={() => {setPage('/mywork')}} to='/mywork'>My Work</LinkR>
+                            <LinkR className={`navbar-navLink ${currentPage === '/mywork' ? 'navbar-currentPage' : ''}`} to='/mywork'>My Work</LinkR>
                         </li>
                         <li className='navbar-navItem'>
                             <a className='navbar-navLink' href={resume} rel="noopener noreferrer" target="_blank">Resume</a>
                         </li>
                         <li className='navbar-navItem'>
-                            <LinkR className={`navbar-navLink ${currentPage === '/contact' ? 'navbar-currentPage' : ''}`} onClick={() => {setPage('/contact')}} to='/contact'>Contact Me</LinkR>
+                            <LinkR className={`navbar-navLink ${currentPage === '/contact' ? 'navbar-currentPage' : ''}`} to='/contact'>Contact Me</LinkR>
                         </li>
                     </ul>                        
                 </div>
